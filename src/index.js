@@ -1,9 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./Index.css";
 
 function BookList() {
   return (
-    <section>
+    <section className="book-list">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
       <Book />
     </section>
   );
@@ -11,8 +25,10 @@ function BookList() {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
+      <Title />
+      <Author />
     </article>
   );
 };
@@ -24,4 +40,6 @@ const Image = () => (
   />
 );
 
+const Title = () => <h1>Nuclear Effect</h1>;
+const Author = () => <h4>Albert Franscis</h4>;
 ReactDOM.render(<BookList />, document.getElementById("root"));
