@@ -1,8 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Greeting() {
-  return <h1>Sylus Abel</h1>;
+function BookList() {
+  return (
+    <section>
+      <Book />
+    </section>
+  );
 }
 
-ReactDOM.render(<Greeting />, document.getElementById("root"));
+const Book = () => {
+  return (
+    <article>
+      <Image />
+    </article>
+  );
+};
+
+const Image = () => (
+  <img
+    src="https://m.media-amazon.com/images/I/61SKca8LJLL._AC_UL320_.jpg"
+    alt="nuclear effect"
+  />
+);
+
+ReactDOM.render(<BookList />, document.getElementById("root"));
