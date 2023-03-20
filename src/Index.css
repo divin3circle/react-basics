@@ -36,3 +36,14 @@ body {
 .book:hover {
   background-color: #fff;
 }
+.book h4 {
+  color: blue;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+}
+
+.book p {
+  margin-top: 0.25rem;
+  font-family: cursive;
+}
